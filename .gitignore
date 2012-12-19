@@ -1,1 +1,6 @@
 *.[oa]
+
+autoscan-devices
+loadcpufreq
+rotdash
+waitforX
