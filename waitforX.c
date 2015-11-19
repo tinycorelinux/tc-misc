@@ -36,12 +36,11 @@ in this Software without prior written authorization from The Open Group.
 
 int main() {
 
-	int     cycles;		/* Wait cycle count */
-	Display *xd=NULL;
-	char *displayNum=":0";
+	int cycles;		/* Wait cycle count */
+	Display *xd = NULL;
 
 	for (cycles = 0; cycles < 50; cycles++) { /* try up to 10 seconds */
-		if ((xd = XOpenDisplay(displayNum))) {
+		if ((xd = XOpenDisplay(NULL))) {
 			#ifdef DEBUG
 			printf("%d cycles done\n",cycles+1);
 			#endif
